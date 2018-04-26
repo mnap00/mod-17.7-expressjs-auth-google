@@ -4,7 +4,7 @@ var app = express();
 
 app.get('/', function(req, res) {
     console.log('Received GET request on main site');
-    res.send('Hello GET!');
+    res.send('Add ' + req.params.id + ' identifier');
 });
 
 app.post('/', function(req, res) {
@@ -27,6 +27,4 @@ app.get('/ab*cd', function(req, res) {
     res.send('Pattern found');
 });
 
-var server = app.listen(3000, function() {
-    console.log('Example app is listening on localhost port 3000');
-});
+app.listen(3000);

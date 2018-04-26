@@ -17,6 +17,16 @@ app.delete('/del_user', function(req, res) {
     res.send('Hello DELETE!');
 });
 
+app.get('/list_user', function(req, res) {
+    console.log('Received GET request on list_user site');
+    res.send('Users list');
+});
+
+app.get('/ab*cd', function(req, res) {
+    console.log('Received GET request on ab*cd site');
+    res.send('Pattern found');
+});
+
 var server = app.listen(3000, function() {
     console.log('Example app is listening on localhost port 3000');
 });

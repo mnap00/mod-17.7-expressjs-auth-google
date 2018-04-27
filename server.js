@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function(req, res) {
+app.get('/:id', function(req, res) {
     console.log('Received GET request on main site');
     res.send('Add ' + req.params.id + ' identifier');
 });
@@ -28,3 +28,7 @@ app.get('/ab*cd', function(req, res) {
 });
 
 app.listen(3000);
+
+app.use(function (req, res, next) {
+    res.status(404).send('Sorry, cannot find requested site');
+});

@@ -1,7 +1,7 @@
 {
-  "name": "mod-17.4-expressjs-static-files",
-  "version": "0.4.0",
-  "description": "ExpressJS - static files",
+  "name": "mod-17.5-expressjs-middleware-store",
+  "version": "0.5.0",
+  "description": "ExpressJS - middleware",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mnap00/mod-17.4-expressjs-static-files.git"
+    "url": "git+ssh://git@github.com/mnap00/mod-17.5-expressjs-middleware-store.git"
   },
   "keywords": [
     "express"
@@ -17,9 +17,9 @@
   "author": "mnap00",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mnap00/mod-17.4-expressjs-static-files/issues"
+    "url": "https://github.com/mnap00/mod-17.5-expressjs-middleware-store/issues"
   },
-  "homepage": "https://github.com/mnap00/mod-17.4-expressjs-static-files#readme",
+  "homepage": "https://github.com/mnap00/mod-17.5-expressjs-middleware-store#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3"

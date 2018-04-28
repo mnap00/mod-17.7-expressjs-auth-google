@@ -1,14 +1,15 @@
 {
-  "name": "mod-17.2-expressjs",
-  "version": "0.1.0",
-  "description": "ExpressJS installation",
+  "name": "mod-17.4-expressjs-static-files",
+  "version": "0.4.0",
+  "description": "ExpressJS - static files",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mnap00/mod-17.2-expressjs.git"
+    "url": "git+ssh://git@github.com/mnap00/mod-17.4-expressjs-static-files.git"
   },
   "keywords": [
     "express"
@@ -16,11 +17,12 @@
   "author": "mnap00",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mnap00/mod-17.2-expressjs/issues"
+    "url": "https://github.com/mnap00/mod-17.4-expressjs-static-files/issues"
   },
-  "homepage": "https://github.com/mnap00/mod-17.2-expressjs#readme",
+  "homepage": "https://github.com/mnap00/mod-17.4-expressjs-static-files#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3"
-  }
+  },
+  "devDependencies": {}
 }

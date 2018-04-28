@@ -1,36 +1,17 @@
 {
-    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "commonjs": true,
         "es6": true,
         "node": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:flowtype/recommended"
-    ],
+    "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "jsx": true
-        },
-        "sourceType": "module",
-        "allowImportExportEverywhere": false,
-        "codeFrame": false
+        "sourceType": "module"
     },
-    "globals": {
-        "ReactDOM": false,
-        "React": false
-    },
-    "plugins": [
-        "react",
-        "flowtype"
-    ],
     "rules": {
-        "strict": 0,
         "indent": [
-            "error",
+            "warn",
             4
         ],
         "linebreak-style": [
@@ -43,11 +24,7 @@
         ],
         "semi": [
             "warn",
-            "always", {
-                "omitLastInOneLineBlock": true
-            }
-        ],
-        "react/jsx-uses-vars": 2,
-        "react/jsx-uses-react": 2
+            "always"
+        ]
     }
 }

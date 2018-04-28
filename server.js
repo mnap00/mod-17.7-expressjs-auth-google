@@ -4,6 +4,11 @@ var app = express();
 
 app.use(express.static('assets'));
 
+app.use(function(req, res, next) {
+    console.log('I\'m the middleware between \'request\' and \'response\'!');
+    next();
+});
+
 app.get('/', function(req, res) {
     console.log('Received GET request on main site');
     res.sendFile('/index.html');

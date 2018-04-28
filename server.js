@@ -4,6 +4,11 @@ var app = express();
 
 app.use(express.static('assets'));
 
+app.use('/store', function(req, res, next) {
+    console.log('I\'m the middleware for \'/store\' request');
+    next();
+});
+
 app.get('/', function(req, res) {
     console.log('Received GET request on main site');
     res.sendFile('/index.html');
@@ -17,8 +22,15 @@ app.get('/userform', function(req, res) {
     res.end(JSON.stringify(response));
 });
 
+app.get('/store', function(req, res) {
+    res.send('This is store');
+});
+
 var server = app.listen(3000, 'localhost', function() {
     var host = server.address().address;
     var port = server.address().port;
     console.log('Example app listening on http://' + host + ':' + port);
+});
+app.use(function (req, res, next) {
+    res.status(404).send('Sorry, cannot find requested site');
 });

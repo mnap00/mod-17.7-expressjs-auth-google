@@ -2,6 +2,9 @@
 var express = require('express');
 var app = express();
 
+app.set('view engine', 'pug');
+app.set('views', './views');
+
 app.use(express.static('assets'));
 
 app.use('/store', function(req, res, next) {

@@ -2,12 +2,12 @@
 var express = require('express');
 var app = express();
 
-app.use(express.static('assets'));
-
 app.use(function(req, res, next) {
     console.log('I\'m the middleware between \'request\' and \'response\'!');
     next();
 });
+
+app.use(express.static('assets'));
 
 app.get('/', function(req, res) {
     console.log('Received GET request on main site');

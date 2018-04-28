@@ -1,7 +1,7 @@
 {
-  "name": "mod-17.5-expressjs-middleware-store",
-  "version": "0.5.0",
-  "description": "ExpressJS - middleware",
+  "name": "mod-17.6-expressjs-pug-templates",
+  "version": "0.6.0",
+  "description": "ExpressJS - Pug templates",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mnap00/mod-17.5-expressjs-middleware-store.git"
+    "url": "git+ssh://git@github.com/mnap00/mod-17.6-expressjs-pug-templates.git"
   },
   "keywords": [
     "express"
@@ -17,12 +17,13 @@
   "author": "mnap00",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mnap00/mod-17.5-expressjs-middleware-store/issues"
+    "url": "https://github.com/mnap00/mod-17.6-expressjs-pug-templates/issues"
   },
-  "homepage": "https://github.com/mnap00/mod-17.5-expressjs-middleware-store#readme",
+  "homepage": "https://github.com/mnap00/mod-17.6-expressjs-pug-templates#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
   },
   "devDependencies": {}
 }

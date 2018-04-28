@@ -33,6 +33,14 @@ app.get('/first-template', function(req, res) {
     res.render('first-template');
 });
 
+app.get('/welcome', function(req, res) {
+    res.render('aa-welcome');
+});
+
+app.get('/auth/google', function(req, res) {
+    res.render('aa-auth-google');
+});
+
 var server = app.listen(3000, 'localhost', function() {
     var host = server.address().address;
     var port = server.address().port;

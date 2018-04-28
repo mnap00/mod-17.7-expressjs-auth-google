@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title Awesome App
+    body
+        include ./aa-header.pug
+
+        h1.main__title This is Awesome App (AA)
+        p.main__description.
+            It enables you to do awesome things
+        p.auth__caption.
+            Login with Google:
+        a.btn.auth__link(href='/auth/google') Login
+
+        include ./aa-footer.pug

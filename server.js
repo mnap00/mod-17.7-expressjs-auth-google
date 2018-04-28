@@ -29,6 +29,10 @@ app.get('/store', function(req, res) {
     res.send('This is store');
 });
 
+app.get('/first-template', function(req, res) {
+    res.render('first-template');
+});
+
 var server = app.listen(3000, 'localhost', function() {
     var host = server.address().address;
     var port = server.address().port;

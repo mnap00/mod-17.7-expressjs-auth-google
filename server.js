@@ -2,6 +2,8 @@
 var express = require('express');
 var app = express();
 
+app.use(express.static('assets'));
+
 app.get('/', function(req, res) {
     console.log('Received GET request on main site');
     res.send('Hello World!');

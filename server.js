@@ -35,13 +35,26 @@ passport.use(new GoogleStrategy(
     }
 ));
 
-app.get('/welcome', function(req, res) {
-    res.render('aa-welcome');
+app.get('/', function(req, res) {
+    res.render('aa-welcome', {user: req.user});
 });
 
-app.get('/auth/google', function(req, res) {
-    res.render('aa-auth-google');
+app.get('/logged', function(req, res) {
+    res.render('aa-logged', {user: googleProfile});
 });
+
+app.get('/auth/google',
+    passport.authenticate('google', {
+        scope: ['profile', 'email']
+    })
+);
+
+app.get('/auth/google/callback',
+    passport.authenticate('google', {
+        successRedirect: '/logged',
+        failureRedirect: '/'
+    })
+);
 
 var server = app.listen(3000, 'localhost', function() {
     var host = server.address().address;

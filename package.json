@@ -1,7 +1,7 @@
 {
-  "name": "mod-17.6-expressjs-pug-templates",
-  "version": "0.6.0",
-  "description": "ExpressJS - Pug templates",
+  "name": "mod-17.7-expressjs-auth-google",
+  "version": "0.7.0",
+  "description": "ExpressJS - authorisation with Google API",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mnap00/mod-17.6-expressjs-pug-templates.git"
+    "url": "git+ssh://git@github.com/mnap00/mod-17.7-expressjs-auth-google.git"
   },
   "keywords": [
     "express"
@@ -17,13 +17,12 @@
   "author": "mnap00",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mnap00/mod-17.6-expressjs-pug-templates/issues"
+    "url": "https://github.com/mnap00/mod-17.7-expressjs-auth-google/issues"
   },
-  "homepage": "https://github.com/mnap00/mod-17.6-expressjs-pug-templates#readme",
+  "homepage": "https://github.com/mnap00/mod-17.7-expressjs-auth-google#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "pug": "^2.0.3"
-  },
-  "devDependencies": {}
+  }
 }

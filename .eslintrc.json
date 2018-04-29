@@ -24,7 +24,9 @@
         ],
         "semi": [
             "warn",
-            "always"
+            "always", {
+                "omitLastInOneLineBlock": true
+            }
         ]
     }
 }

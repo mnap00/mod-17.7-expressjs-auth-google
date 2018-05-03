@@ -70,6 +70,11 @@ app.get('/auth/google/callback',
     })
 );
 
+app.get('/auth/logout', function(req, res) {
+    googleProfile = {};
+    res.redirect('/');
+});
+
 var server = app.listen(3000, 'localhost', function() {
     var host = server.address().address;
     var port = server.address().port;

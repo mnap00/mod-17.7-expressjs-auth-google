@@ -35,14 +35,15 @@ passport.use(new GoogleStrategy(
     }
 ));
 
-function ensureAuthenticated(req, res, next) {
-    if (req.isAuthenticated()) {
-        console.log('authenticated');
-        return next();
-    }
-    console.log('not authenticated');
-    res.redirect('/');
-}
+// Turn off snippet below - returns always 'false'
+//function ensureAuthenticated(req, res, next) {
+//    if (req.isAuthenticated()) {
+//        console.log('authenticated');
+//        return next();
+//    }
+//    console.log('not authenticated');
+//    res.redirect('/');
+//}
 
 app.get('/', function(req, res) {
     res.render('aa-welcome', {user: req.user});
@@ -50,7 +51,10 @@ app.get('/', function(req, res) {
 
 app.get('/logged', function(req, res) {
 //app.get('/logged', ensureAuthenticated, function(req, res) {
-    res.render('aa-logged', {user: googleProfile});
+    console.log(googleProfile);
+    (googleProfile.id && googleProfile.displayName)
+        ? res.render('aa-logged', {user: googleProfile})
+        : res.redirect('/');
 });
 
 app.get('/auth/google',

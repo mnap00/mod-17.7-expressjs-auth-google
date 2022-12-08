@@ -22,7 +22,7 @@
   "homepage": "https://github.com/mnap00/mod-17.7-expressjs-auth-google#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "passport": "^0.4.0",
     "passport-google-oauth": "^1.0.0",
     "pug": "^2.0.3"
